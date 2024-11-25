@@ -1,6 +1,7 @@
 export interface Config {
   protectionEnabled: boolean;
   adblockLists: string[];
+  blockedDomains: string[];
 }
 
 export const defaultConfig: Config = {
@@ -9,4 +10,5 @@ export const defaultConfig: Config = {
     "https://easylist.to/easylist/easylist.txt",
     "https://big.oisd.nl",
   ],
+  blockedDomains: [],
 };

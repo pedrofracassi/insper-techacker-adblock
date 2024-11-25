@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "manifest_version": 2,
   "background": {
-    "scripts": ["src/background.ts"]
+    "scripts": ["src/background.ts"],
+    "persistent": true
   },
   "browser_specific_settings": {
     "gecko": {
@@ -37,6 +38,9 @@
     "browser_style": false,
     "default_area": "navbar",
     "default_title": "AF TecHacker",
-    "default_popup": "index.html"
+    "default_popup": "index.html",
+    "default_icon": {
+      "48": "favicon.jpg"
+    }
   }
 }

@@ -2196,7 +2196,7 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jszip@^3.2.2:
+jszip@^3.10.1, jszip@^3.2.2:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/jszip/-/jszip-3.10.1.tgz#34aee70eb18ea1faec2f589208a157d1feb091c2"
   integrity sha512-xXDvecyTpGLrqFrvkrUSoxxfJI5AH7U8zxxtVclpsUtMCq4JQ290LY8AW5c7Ggnr/Y/oK+bQMbqK2qmtk3pN4g==
@@ -3359,6 +3359,13 @@ vite-plugin-web-extension@^4.3.1:
     web-ext-run "^0.2.1"
     webextension-polyfill "^0.10.0"
     yaml "^2.3.4"
+
+vite-plugin-zip-pack@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/vite-plugin-zip-pack/-/vite-plugin-zip-pack-1.2.4.tgz#3e38e958b7da14a850113177e66a1e50bfa70b73"
+  integrity sha512-QgZEeiWayE2ZvMbkvcqWf94p/Z5YeNHZlkwXWIkkoISjePiWVXKRX2xCGmsURe9acGVdkobZ31dFJuCp3j1hMg==
+  dependencies:
+    jszip "^3.10.1"
 
 "vite@^5.0.0 || ^4.1.4", vite@^5.4.10:
   version "5.4.11"

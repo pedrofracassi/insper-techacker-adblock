@@ -16,3 +16,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Disable scrollbars */
+::-webkit-scrollbar {
+  display: none;
+}
