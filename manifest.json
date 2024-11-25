@@ -1,0 +1,31 @@
+{
+  "name": "AF TecHacker",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "background": {
+    "scripts": ["src/background.ts"]
+  },
+  "permissions": [
+    "alarms",
+    "dns",
+    "menus",
+    "privacy",
+    "storage",
+    "tabs",
+    "unlimitedStorage",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*", "file://*/*"],
+      "js": ["src/contentscript.ts"],
+      "all_frames": true,
+      "match_about_blank": true,
+      "run_at": "document_start"
+    }
+  ]
+}
