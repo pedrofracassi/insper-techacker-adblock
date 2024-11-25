@@ -1,9 +1,15 @@
 {
   "name": "AF TecHacker",
   "version": "1.0.0",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "background": {
     "scripts": ["src/background.ts"]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "extensao-techacker@fracassi.tech",
+      "strict_min_version": "58.0"
+    }
   },
   "permissions": [
     "alarms",
@@ -18,7 +24,6 @@
     "webRequestBlocking",
     "<all_urls>"
   ],
-  "host_permissions": ["<all_urls>"],
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*", "file://*/*"],
@@ -27,5 +32,11 @@
       "match_about_blank": true,
       "run_at": "document_start"
     }
-  ]
+  ],
+  "browser_action": {
+    "browser_style": false,
+    "default_area": "navbar",
+    "default_title": "AF TecHacker",
+    "default_popup": "index.html"
+  }
 }
